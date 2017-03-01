@@ -13,6 +13,8 @@ Wall street
 Rajout par M.Lahitte
 et par Dentre
 
+et encore par M.Lahitte!
+
 ▓█████▄ ▓█████ ▄▄▄     ▄▄▄█████▓ ██░ ██
 ▒██▀ ██▌▓█   ▀▒████▄   ▓  ██▒ ▓▒▓██░ ██▒
 ░██   █▌▒███  ▒██  ▀█▄ ▒ ▓██░ ▒░▒██▀▀██░
@@ -27,3 +29,5 @@ et par Dentre
 "You got borked !" ( spooky )
 
 (/ .□.)\ ︵╰(゜Д゜)╯︵ /(.□. \)
+
+ça suffit maintenant!!
