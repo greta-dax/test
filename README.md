@@ -1,10 +1,14 @@
 # test
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Rahout par MONSIEUR Emile
 =======
 un test
+=======
+un test, deux tests, trois tests
+>>>>>>> 3b4c784f8722f146c900d0c553647a130b5d4dc2
 # Bonjour tout le monde, comment ca va?
 un super message qu'il est bien!
 =======
