@@ -6,7 +6,9 @@ et par Dentre
 Rahout par MONSIEUR Emile
 un test, deux tests, trois tests
 # Bonjour tout le monde, comment ca va?
-
+<<<<<<< HEAD
+un super message qu'il est bien
+=======
 un super message qu'il est bien!
 
 Rajout par M.Lahitte
@@ -47,4 +49,4 @@ une modif
 
 
 Yo!
->
+>>>>>>> origin
