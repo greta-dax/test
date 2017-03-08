@@ -1,0 +1,27 @@
+Dans un dépôt local de test
+
+Éditer un fichier existant (README.md par exemple)
+
+Commiter les modifications
+git add README.md
+git commit -m "Modification README.md."
+
+Afficher l'historique
+git log
+
+Afficher la dernière modification
+git show
+
+Annuler de manière douce la dernière modification (revert)
+git revert HEAD
+
+Afficher l'historique et vérifier qu'un commit d'annulation a bien été créé
+git log
+git show
+
+Annuler les deux derniers commits de manière ``violente'' (reset)
+git reset HEAD~2
+
+Afficher l'historique et vérifier que les deux derniers commit ont été supprimés
+git log
+
