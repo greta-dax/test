@@ -1,0 +1,31 @@
+
+
+Dans un dépôt local de test
+Créer la branche locale ``test'' et se placer dessus
+
+git checkout -b test
+
+Modifier un fichier (par exemple README.md) et commiter
+git add README.md && git commit -m "Modification"
+
+Pousser la branche sur le dépôt distant ``origin''
+git push origin test
+
+(Récupérer toutes les branches : git fetch --all)
+
+Lister les branches distantes
+git branch -r
+
+Se placer sur la branche ``master``
+git checkout master
+
+Fusionner la branche ''test`` dans ''master``
+git merge test
+
+Supprimer la branche ''test`` localement et sur le dépôt distant
+git branch -D -r test
+git push origin --delete test
+
+Supprimer localement les branches supprimées sur le dépôt distant
+git fetch --all --prune
+
