@@ -1,0 +1,23 @@
+
+Ligne de commande :
+http://juliend.github.io/linux-cheatsheet/
+https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/
+
+Shell-script :
+https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux/introduction-aux-scripts-shell
+http://www.tuteurs.ens.fr/unix/shell/script.html
+
+Git :
+http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf
+https://danielkummer.github.io/git-flow-cheatsheet/
+
+SQL :
+https://sql.sh/
+http://docs.postgresql.fr/9.6/
+
+Nginx :
+http://nginx.org/en/docs/
+https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/
+
+SSH :
+http://www.cheat-sheets.org/saved-copy/OpenSSH_quickref.pdf
