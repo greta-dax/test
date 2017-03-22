@@ -5,55 +5,53 @@
 
 
 Installer git-flow
--> apt-get install git-flow
--> https://github.com/nvie/gitflow/wiki/Windows
+  -> apt-get install git-flow
+  -> https://github.com/nvie/gitflow/wiki/Windows
 
 Initialiser git-flow sur un dépôt local (peut être vide)
-
-(-> mkdir test)
--> cd test
-(-> git init)
--> git flow init
+  (-> mkdir test)
+  -> cd test
+  (-> git init)
+  -> git flow init
 
 Vérifier que la branche develop a bien été créée et qu'on a basculé dessus
--> git status / git branch
+  -> git status / git branch
 
 Démarrer une branche de fonctionnalité
--> git flow feature start feature1
+  -> git flow feature start feature1
 
 Vérifier la création de la branche feature/{fonctionnalité} et le basculement dessus
--> git status/git branch
+  -> git status/git branch
 
 Faire des modifications dans la branche de fonctionnalité
--> vim , git add, git commit
+  -> vim , git add, git commit
 
 Vérifier les logs
--> git flow log
+  -> git flow log
 
 Terminer la branche de fonctionnalité
--> git flow feature finish
+  -> git flow feature finish
 
 Vérifier que le ou les commits ont bien été intégrés dans develop
--> git log
+  -> git log
 
 Commencer une branche de release
--> git flow release start 0.0.1
+  -> git flow release start 0.0.1
 
 Vérifier que la branche release/{version} a bien été créée et qu'on a basculé dessus
--> git branch
+  -> git branch
 
 Modifier un fichier VERSION avec le numéro de version de la release et commiter
--> vim, git add, git commit
+  -> vim, git add, git commit
 
 Terminer la release (remplir les messages de commit vides si nécessaire)
--> git flow release finish
+  -> git flow release finish
 
 Vérifier que la branche de release a disparu
--> git branch
+  -> git branch
 
 Vérifier que le fichier VERSION a la bonne version
--> cat ...
+  -> cat ...
 
 Vérifier que le tag avec la version a bien été créé
--> git tag
-
+  -> git tag
