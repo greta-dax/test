@@ -1,0 +1,34 @@
+
+Installer meld et le configurer comme outil de merge pour git :
+  -> git config --global merge.tool meld
+
+Se mettre par deux
+
+Sur le dépôt de test, un des deux de chaque binôme crée une branche et la pousse sur le dépôt distant
+
+L'autre récupére la branche distance dans une branche locale
+
+Les deux modifient le même fichier à deux endroits différents assez éloignés (début et fin du fichier)
+
+Les deux commit, pushent, pullent -> le second à push devra pull avant (git le dira)
+  -> git add ..., git commit ..., [git pull], git push ..., git pull
+
+Les deux modifient le fichier au même endroit, commitent et pushent
+  -> git add ..., git commit ..., [git pull], git push ..., git pull
+
+Le second à push aura un message disant de fait pull d'abord
+
+Au pull, git dira qu'il y a des conflits, utiliser mergetool pour le régler
+
+  -> git pull # Génère un conflit
+  -> git mergetool
+    -> édition avec meld
+    -> sauvegarde
+    -> quit
+  -> git commit --no-edit
+
+Vérifier qu'il y a un commit de merge
+  -> git log
+
+Push les modifications sur le remote
+  -> git push
