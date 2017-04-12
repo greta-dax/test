@@ -1,0 +1,16 @@
+<VirtualHost *:80>
+   ServerAdmin contact@mondomaine.fr
+   ServerName super-app.mondomaine.fr
+   ProxyRequests off
+   <Proxy *>
+      Order deny,allow
+      Allow from all
+   </Proxy>
+   <Location />
+      ProxyPass http://127.0.0.1:1337/
+      ProxyPassReverse http://127.0.0.1:1337/
+   </Location>
+   ErrorLog /home/super-app/logs/error.log
+   LogLevel warn
+   CustomLog /home/super-app/logs/access.log combined
+</VirtualHost>
