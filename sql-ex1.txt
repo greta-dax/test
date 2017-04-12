@@ -1,0 +1,55 @@
+
+
+Nombre total de compagnies
+
+=> select count(*) from companies;
+
+Nombre de compagnies par code postal
+
+=> select postal_code, count(*) from companies group by postal_code;
+
+La moyenne d'age des compagnies
+
+=> select avg(age) from companies;
+
+La moyenne d'age des compagnies par code postal
+
+=> select postal_code, avg(age) from companies group by postal_code
+
+Remplacer 'bidule' par 'Bidule' dans la colonne adress1
+
+=> update companies set adress1 = replace(adress1, 'bidule', 'Bidule');
+=> update companies set adress1 = replace(adress1, 'bidule', 'Bidule') where adress1 like '%bidule%';
+
+Liste des pays dont libelle_fr commence par 'A'
+
+=> select * from countries where left(libelle_fr, 1) = 'A';
+=> select * from countries where substring(libelle_fr from 1 for 1) = 'A';
+=> select * from countries where libelle_fr like 'A%';
+=> select * from countries where libelle_fr ~ '^A';
+
+Nombre de pays par première lettre de libelle_fr
+
+=> select left(libelle_fr, 1) as first_letter, count(*)
+   from countries
+   group by first_letter
+   order by first_letter;
+
+
+
+(A AND B) AND C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
