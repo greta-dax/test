@@ -1,0 +1,57 @@
+
+Récupérer l'ISO Debian netinst AMD64
+
+Installer Virtualbox (téléchargeable depuis le site d'Oracle)
+
+Créer une machine virtuelle
+  - 20Go disque VDI dynamiquement alloué
+  - 2Go RAM
+  - 2vCPU
+  - réseau NAT
+  - iso Debian sur lecteur CD
+
+Démarrer la machine virtuelle et faire l'installation Debian
+  - Nom : comme vous voulez
+  - Configuration réseau automatique
+  - Partitionnement : automatique tout dans /
+  - Tout par défaut
+  - Utilisateur : ce que vous voulez
+  - SSH Server
+
+Se connecter en root
+
+Installer, configurer et tester sudo
+
+La suite en root
+
+Configurer ssh
+
+Installer nodejs, nodejs-legacy, npm, mongodb, nginx ou apache2, git
+
+Faire en sorte qu'on puisse se connecter en www-data par clé SSH
+
+La suite en utilisateur www-data
+
+Déployer l'application NodeJs (git clone --bare; hook post-receive, checkout
+dans répertoire cible final)
+
+Installer les dépendances
+
+Installer pm2
+
+Démarrer l'application avec pm2
+
+Vérifier qu'elle est disponible
+
+La suite en root
+
+Configurer le vhost Nginx
+
+Vérifier et recharger la configuration Nginx
+
+Accéder à l'application via le vhost Nginx
+
+Installer un gestionnaire de parefeu (shorewall)
+
+Bloquer l'accès à tous les services sauf HTTP et SSH
+
