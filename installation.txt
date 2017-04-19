@@ -88,6 +88,11 @@ dans répertoire cible final)
 PROJECT_ROOT=/var/www/app
 git --work-tree=$PROJECT_ROOT --git-dir=$PROJECT_ROOT.git checkout -f
 
+  chmod +x app.git/hooks/post-receive
+  mkdir app
+  ./app.git/hooks/post-receive
+  ls app
+
 
 Installer les dépendances
 
