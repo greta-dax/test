@@ -112,6 +112,9 @@ Vérifier qu'elle est disponible
 
 La suite en root
 
+  ssh alahouze@192.168.56.102
+  sudo -i
+
 Configurer le vhost Nginx
 
   nano /etc/nginx/sites-available/default
