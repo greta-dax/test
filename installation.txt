@@ -93,14 +93,22 @@ git --work-tree=$PROJECT_ROOT --git-dir=$PROJECT_ROOT.git checkout -f
   ./app.git/hooks/post-receive
   ls app
 
-
 Installer les dépendances
+
+  cd app
+  npm install
 
 Installer pm2
 
+  npm install pm2
+
 Démarrer l'application avec pm2
 
+  ./node_modules/.bin/pm2 start bin/www
+
 Vérifier qu'elle est disponible
+
+   http://192.168.56.102:3000
 
 La suite en root
 
