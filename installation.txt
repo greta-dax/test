@@ -49,15 +49,45 @@ Copier la clé sur la VM
 
   ssh-copy-id alahouze@192.168.56.102
 
+Connexion en ssh
 
-Installer nodejs, nodejs-legacy, npm, mongodb, nginx ou apache2, git
+  ssh alahouze@192.168.56.102
+
+Installer nodejs, nodejs-legacy, npm
+
+  sudo apt-get install curl
+  curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+  sudo apt-get install nodejs
+
+Installer mongodb, nginx, git
+
+  sudo apt-get install mongodb git nginx-full
 
 Faire en sorte qu'on puisse se connecter en www-data par clé SSH
 
-La suite en utilisateur www-data
+  sudo chown www-data ~www-data
+  sudo -u www-data mkdir ~www-data/.ssh
+  sudo -u www-data chmod 700 ~www-data/.ssh
+  sudo cp /home/alahouze/.ssh/authorized_keys ~www-data/.ssh
+  sudo chown www-data:www-data ~www-data/.ssh/authorized_keys
+  sudo gpasswd -a www-data ssh
+  sudo chsh www-data -s /bin/bash
+
+Pour la suite se connecter en www-data par ssh
+
+  ssh www-data@192.168.56.102
 
 Déployer l'application NodeJs (git clone --bare; hook post-receive, checkout
 dans répertoire cible final)
+
+  git clone --bare https://github.com/GretaLahitte/appFormation_Mongo app.git
+  
+  nano app.git/hooks/post-receive
+
+#!/bin/sh
+PROJECT_ROOT=/var/www/app.git
+git --work-tree=$PROJECT_ROOT --git-dir=$PROJECT_ROOT.git checkout -f
+
 
 Installer les dépendances
 
