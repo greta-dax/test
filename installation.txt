@@ -22,9 +22,33 @@ Se connecter en root
 
 Installer, configurer et tester sudo
 
+  su -
+  apt-get install sudo
+  gpasswd -a alahouze sudo
+
+
 La suite en root
 
+  exit
+  sudo -i
+
 Configurer ssh
+
+  vim /etc/ssh/sshd_config
+
+  addgroup --system ssh
+  gpasswd -a alahouze ssh
+
+Configurer le second réseau
+
+Générer une clé SSH
+
+  ssh-keygen -t rsa -b 4096
+
+Copier la clé sur la VM
+
+  ssh-copy-id alahouze@192.168.56.102
+
 
 Installer nodejs, nodejs-legacy, npm, mongodb, nginx ou apache2, git
 
@@ -54,4 +78,6 @@ Accéder à l'application via le vhost Nginx
 Installer un gestionnaire de parefeu (shorewall)
 
 Bloquer l'accès à tous les services sauf HTTP et SSH
+
+Installation fail2ban
 
