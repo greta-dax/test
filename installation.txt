@@ -106,6 +106,18 @@ La suite en root
 
 Configurer le vhost Nginx
 
+  nano /etc/nginx/sites-available/default
+
+location / {
+    proxy_pass http://127.0.0.1:3000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+}
+
+
 Vérifier et recharger la configuration Nginx
 
 Accéder à l'application via le vhost Nginx
