@@ -119,6 +119,12 @@ Configurer le vhost Nginx
 
   nano /etc/nginx/sites-available/default
 
+  # configurer location / comme suit (laisser le reste tel quel) :
+
+root /var/www/app/public;
+
+…
+
 location / {
     proxy_pass http://127.0.0.1:3000;
     proxy_http_version 1.1;
@@ -130,6 +136,9 @@ location / {
 
 
 Vérifier et recharger la configuration Nginx
+
+    sudo nginx -t
+    sudo service nginx restart
 
 Accéder à l'application via le vhost Nginx
 
