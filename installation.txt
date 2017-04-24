@@ -142,6 +142,8 @@ Vérifier et recharger la configuration Nginx
 
 Accéder à l'application via le vhost Nginx
 
+    http://192.168.56.102/
+
 Installer un gestionnaire de parefeu (shorewall)
 
 Bloquer l'accès à tous les services sauf HTTP et SSH
