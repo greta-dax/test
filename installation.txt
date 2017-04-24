@@ -160,6 +160,7 @@ Fichier service
   -> sudo systemctl enable app-formation
   -> sudo ps faux
   -> reboot
+  -> Test accès application : dans navigateur : http://192.168.56.102
 
 Installation fail2ban
 
