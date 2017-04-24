@@ -1,0 +1,10 @@
+###############################################################################
+#SOURCE DEST    POLICY          LOG     LIMIT:          CONNLIMIT:
+#                               LEVEL   BURST           MASK
+fw      net     ACCEPT
+net     fw      DROP
+
+fw      priv    ACCEPT
+priv    fw      ACCEPT
+
+all     all     DROP
