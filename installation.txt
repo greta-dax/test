@@ -146,7 +146,18 @@ Accéder à l'application via le vhost Nginx
 
 Installer un gestionnaire de parefeu (shorewall)
 
+    sudo apt-get install shorewall
+
 Bloquer l'accès à tous les services sauf HTTP et SSH
+
+
+Fichier service
+  -> copier app-formation.service dans /etc/systemd/system/app-formation.service
+
+  -> sudo systemctl daemon-reload
+  -> sudo systemctl list-unit-files | grep app-formation
+  -> sudo systemctl start app-formation
+  -> sudo systemctl enable app-formation
 
 Installation fail2ban
 
