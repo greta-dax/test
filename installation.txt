@@ -158,6 +158,8 @@ Fichier service
   -> sudo systemctl list-unit-files | grep app-formation
   -> sudo systemctl start app-formation
   -> sudo systemctl enable app-formation
+  -> sudo ps faux
+  -> reboot
 
 Installation fail2ban
 
