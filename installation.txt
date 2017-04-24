@@ -162,5 +162,16 @@ Fichier service
   -> reboot
   -> Test accès application : dans navigateur : http://192.168.56.102
 
+Mise à jour de l'application
+
+  -> Ajout remote dans le dépôt de développement:
+    -> git remote add prod ssh://www-data@192.168.56.102:/var/www/app.git
+  -> Modifications
+  -> Push modifications :
+    -> git push prod master
+  -> Terminer la mise à jour en lançant `npm install` sur le serveur
+  -> Ajouter commande `npm install` directement dans le hook, et
+     éventuellement d'autres actions (redémarrage du service)
+
 Installation fail2ban
 
